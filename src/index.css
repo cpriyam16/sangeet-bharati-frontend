@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Faunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --brand-gold: #d4af37;
+  --brand-gold-soft: #f4df8f;
+  --brand-burgundy: #b62a4b;
+  --brand-burgundy-deep: #1b090f;
+  --brand-burgundy-soft: #cf7d96;
+  --ink: #f3ece5;
+  --ink-soft: #d4c7bf;
+  --paper: #120d11;
+  --paper-strong: #1a1217;
+  --paper-soft: #1d171b;
+  --white: #fff;
+  --border: rgba(212, 175, 55, 0.16);
+  --shadow: 0 30px 60px rgba(0, 0, 0, 0.38);
+  --font-display: 'Faunces', serif;
+  --font-body: 'Manrope', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.12), transparent 28%),
+    radial-gradient(circle at right top, rgba(182, 42, 75, 0.18), transparent 24%),
+    linear-gradient(180deg, #120d11 0%, #171116 100%);
+  color: var(--ink);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: 700;
+}
