@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import singingImage from '../assets/images/singing.jpg'
-import facultyImage from '../assets/images/faculty.jpg'
-import purandaraImage from '../assets/images/purandara-program.png'
-import concertImage from '../assets/images/sbicm-concert.jpg'
+import singingImage from '../../assets/images/singing.jpg'
+import facultyImage from '../../assets/images/faculty.jpg'
+import purandaraImage from '../../assets/images/purandara-program.png'
+import concertImage from '../../assets/images/sbicm-concert.jpg'
 
 const stats = [
   { value: '25+', label: 'Years of Excellence' },
@@ -134,19 +134,20 @@ export default function HomePage() {
 
           <div className="hero-carousel-panel" aria-label="Featured institutional highlights">
             <div className="carousel-slides">
-              {heroSlides.map((slide, index) => (
-                <div
-                  key={slide.title}
-                  className={`carousel-slide ${index === activeSlide ? 'is-active' : ''}`}
-                  style={{ backgroundImage: `url(${slide.image})` }}
-                >
-                  <div className="slide-overlay">
-                    <span className="slide-kicker">{slide.kicker}</span>
-                    <h3>{slide.title}</h3>
-                    <p>{slide.caption}</p>
+              {heroSlides.map((slide, index) => {
+                const slideClassName = index === activeSlide ? 'carousel-slide is-active' : 'carousel-slide'
+                const slideStyle = { backgroundImage: `url(${slide.image})` }
+
+                return (
+                  <div key={slide.title} className={slideClassName} style={slideStyle}>
+                    <div className="slide-overlay">
+                      <span className="slide-kicker">{slide.kicker}</span>
+                      <h3>{slide.title}</h3>
+                      <p>{slide.caption}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
 
             <div className="carousel-dots" aria-label="Carousel navigation">

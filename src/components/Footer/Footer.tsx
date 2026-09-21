@@ -1,4 +1,4 @@
-import BrandMark from './BrandMark'
+import BrandMark from '../BrandMark'
 
 export default function Footer() {
   return (
