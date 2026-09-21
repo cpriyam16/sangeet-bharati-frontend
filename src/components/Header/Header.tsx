@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import BrandMark from './BrandMark'
-import Navbar from './Navbar'
+import BrandMark from '../BrandMark'
+import Navbar from '../Navbar/Navbar'
 
 export default function Header() {
   return (

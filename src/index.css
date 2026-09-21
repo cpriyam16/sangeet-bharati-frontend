@@ -3,17 +3,20 @@
 :root {
   --brand-gold: #d4af37;
   --brand-gold-soft: #f4df8f;
-  --brand-burgundy: #b62a4b;
-  --brand-burgundy-deep: #1b090f;
+  --brand-burgundy: #c4416a;
+  --brand-burgundy-deep: #0b0a0c;
   --brand-burgundy-soft: #cf7d96;
-  --ink: #f3ece5;
-  --ink-soft: #d4c7bf;
-  --paper: #120d11;
-  --paper-strong: #1a1217;
-  --paper-soft: #1d171b;
+  --ink: #e9e7ec;
+  --ink-soft: #aeacb5;
+  --paper: #18171c;
+  --paper-strong: #1e1d23;
+  --paper-soft: #232228;
   --white: #fff;
-  --border: rgba(212, 175, 55, 0.16);
-  --shadow: 0 30px 60px rgba(0, 0, 0, 0.38);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.13);
+  --shadow: 0 20px 44px rgba(0, 0, 0, 0.35);
+  --radius: 4px;
+  --radius-lg: 6px;
   --font-display: 'Faunces', serif;
   --font-body: 'Manrope', sans-serif;
   color: var(--ink);
@@ -38,10 +41,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    radial-gradient(circle at top, rgba(212, 175, 55, 0.12), transparent 28%),
-    radial-gradient(circle at right top, rgba(182, 42, 75, 0.18), transparent 24%),
-    linear-gradient(180deg, #120d11 0%, #171116 100%);
+  background: var(--paper);
   color: var(--ink);
 }
 

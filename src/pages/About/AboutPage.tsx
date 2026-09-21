@@ -1,6 +1,6 @@
-import mainImage from '../assets/images/main.jpg'
-import facultyImage from '../assets/images/faculty.jpg'
-import kannadaKootaImage from '../assets/images/ottawa-kannada-koota.jpg'
+import mainImage from '../../assets/images/main-about.jpg'
+import facultyImage from '../../assets/images/faculty.jpg'
+import secondMainImage from '../../assets/images/main.jpg'
 
 const values = [
   {
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <img src={mainImage} alt="Sangeet Bharathi main institute event" className="about-main-image" />
             <div className="about-mini-grid">
               <img src={facultyImage} alt="Faculty interaction" />
-              <img src={kannadaKootaImage} alt="Cultural community gathering" />
+              <img src={secondMainImage} alt="Cultural community gathering" />
             </div>
           </div>
         </div>

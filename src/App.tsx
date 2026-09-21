@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import FacultyPage from './pages/FacultyPage'
-import EventsPage from './pages/EventsPage'
-import ContactPage from './pages/ContactPage'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import HomePage from './pages/Home/HomePage'
+import AboutPage from './pages/About/AboutPage'
+import FacultyPage from './pages/Faculty/FacultyPage'
+import EventsPage from './pages/Events/EventsPage'
+import ContactPage from './pages/Contact/ContactPage'
 
 function App() {
   return (
