@@ -1,4 +1,6 @@
+import { NavLink } from 'react-router-dom'
 import BrandMark from '../BrandMark'
+import { navItems } from '../navigationItems'
 
 export default function Footer() {
   return (
@@ -11,9 +13,11 @@ export default function Footer() {
         <div>
           <h4>Explore</h4>
           <ul>
-            <li>Academics</li>
-            <li>Events</li>
-            <li>Faculty</li>
+            {navItems.map((navItem) => (
+              <li key={navItem.to}>
+                <NavLink to={navItem.to}>{navItem.label}</NavLink>
+              </li>
+            ))}
           </ul>
         </div>
         <div>

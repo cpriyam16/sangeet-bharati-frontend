@@ -11,10 +11,6 @@ export default function Header() {
         </NavLink>
 
         <Navbar />
-
-        <NavLink to="/contact" className="btn btn-gold navbar-cta">
-          Enrol now
-        </NavLink>
       </div>
     </header>
   )

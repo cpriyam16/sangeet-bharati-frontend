@@ -2,7 +2,6 @@
 
 :root {
   --brand-gold: #d4af37;
-  --brand-gold-soft: #f4df8f;
   --brand-burgundy: #c4416a;
   --brand-burgundy-deep: #0b0a0c;
   --brand-burgundy-soft: #cf7d96;
@@ -40,7 +39,6 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
   background: var(--paper);
   color: var(--ink);
 }
