@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useState, type SubmitEvent } from 'react'
 import { useFormValidation } from '../../hooks/useFormValidation'
 import { composeValidators, email, minLength, required } from '../../utils/validation'
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
     contactRules,
   )
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (validateAll()) {
       setIsSubmitted(true)

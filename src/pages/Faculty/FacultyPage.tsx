@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useEffect, useState, type SubmitEvent } from 'react'
 import MainImage from '../../assets/images/main.jpg'
 import canadianTalentImage from '../../assets/images/online-concert.jpg'
 import mashurasthakaImage from '../../assets/images/mashurasthaka.jpg'
@@ -77,7 +77,7 @@ function BookingModal({
   isSubmitted: boolean
   onChange: (field: BookingField, value: string) => void
   onBlur: (field: BookingField) => void
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void
+  onSubmit: (event: SubmitEvent<HTMLFormElement>) => void
   onClose: () => void
 }>) {
   return (
@@ -216,7 +216,7 @@ export default function FacultyPage() {
     setIsSubmitted(false)
   }
 
-  const handleModalSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleModalSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (validateAll()) {
       setIsSubmitted(true)
