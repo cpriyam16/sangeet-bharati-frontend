@@ -752,6 +752,75 @@
   font-size: 0.92rem;
 }
 
+/* ── Events Tabs ───────────────────────────────────────── */
+.events-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.35rem;
+  background: var(--paper-strong);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.events-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
+  white-space: nowrap;
+}
+
+.events-tab-btn:hover:not(.events-tab-btn--active) {
+  background: var(--paper-soft);
+  color: var(--ink);
+}
+
+.events-tab-btn--active {
+  background: var(--brand-gold-soft);
+  color: var(--paper);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.events-tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.18);
+  color: inherit;
+  transition: background 0.22s ease;
+}
+
+.events-tab-btn:not(.events-tab-btn--active) .events-tab-count {
+  background: var(--border-strong);
+  color: var(--ink-soft);
+}
+
+.events-tab-panel {
+  animation: tabFadeIn 0.28s ease;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Event List & Cards ────────────────────────────────── */
 .event-list {
   display: grid;
   gap: 1.2rem;
@@ -762,6 +831,20 @@
   grid-template-columns: 180px 1fr;
   gap: 1.3rem;
   padding: 1.2rem 1.4rem;
+}
+
+/* Past events — subtly muted */
+.event-card--past .event-date {
+  opacity: 0.55;
+  filter: grayscale(0.4);
+}
+
+.event-card--past .event-content h3 {
+  opacity: 0.75;
+}
+
+.event-card--past .event-content p {
+  opacity: 0.65;
 }
 
 .event-date {
